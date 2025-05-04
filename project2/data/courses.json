@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Introduction to Python",
+        "description": "Learn the basics of Python programming, including data structures, file I/O, and more.",
+        "instructor": "Jane Doe",
+        "price": 49.99
+    },
+    {
+        "id": 2,
+        "title": "Web Development with JavaScript",
+        "description": "Build dynamic web applications using JavaScript, HTML, and CSS.",
+        "instructor": "John Smith",
+        "price": 59.99
+    },
+    {
+        "id": 3,
+        "title": "Data Science Fundamentals",
+        "description": "Explore data analysis, visualization, and machine learning with Python.",
+        "instructor": "Emily Johnson",
+        "price": 79.99
+    },
+    {
+        "id": 4,
+        "title": "Graphic Design Basics",
+        "description": "Master the principles of design using tools like Adobe Photoshop and Illustrator.",
+        "instructor": "Michael Brown",
+        "price": 39.99
+    }
+]

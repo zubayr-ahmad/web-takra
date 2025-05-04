@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details - EduPlatform</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">EduPlatform</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="theme-switcher">
+                <button id="theme-toggle">Switch Theme</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="course-details">
+            <h1 id="course-title"></h1>
+            <p id="course-description"></p>
+            <p><strong>Instructor:</strong> <span id="course-instructor"></span></p>
+            <p><strong>Price:</strong> <span id="course-price"></span></p>
+            <button id="enroll-button" class="cta-button">Enroll Now</button>
+            <div class="progress-tracker">
+                <h3>Your Progress</h3>
+                <div class="progress-bar">
+                    <div id="progress-fill" style="width: 0%"></div>
+                </div>
+                <p id="progress-text">0% Complete</p>
+                <button id="update-progress" class="cta-button">Update Progress</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 EduPlatform. All rights reserved.</p>
+    </footer>
+    <script src="js/course.js"></script>
+</body>
+</html>

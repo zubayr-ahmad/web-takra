@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPlatform - Learn Anything</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">EduPlatform</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="theme-switcher">
+                <button id="theme-toggle">Switch Theme</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Learn Anything, Anytime</h1>
+            <p>Explore our curated courses to boost your skills.</p>
+            <a href="#courses" class="cta-button">Browse Courses</a>
+        </section>
+        <section id="courses" class="courses">
+            <h2>Featured Courses</h2>
+            <div id="course-list"></div>
+        </section>
+        <section class="newsletter">
+            <h2>Stay Updated</h2>
+            <form id="newsletter-form">
+                <input type="text" id="newsletter-name" placeholder="Your Name" required>
+                <input type="email" id="newsletter-email" placeholder="Your Email" required>
+                <button type="submit" class="cta-button">Subscribe</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 EduPlatform. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

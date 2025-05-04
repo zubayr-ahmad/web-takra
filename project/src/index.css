@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 79 70 229;
+    --color-primary-light: 129 140 248;
+    --color-primary-dark: 67 56 202;
+    
+    --color-secondary: 147 51 234;
+    --color-secondary-light: 192 132 252;
+    --color-secondary-dark: 126 34 206;
+    
+    --color-accent: 16 185 129;
+    --color-accent-light: 52 211 153;
+    --color-accent-dark: 5 150 105;
+    
+    --color-success: 34 197 94;
+    --color-warning: 234 179 8;
+    --color-error: 239 68 68;
+    
+    --color-gray-50: 249 250 251;
+    --color-gray-100: 243 244 246;
+    --color-gray-200: 229 231 235;
+    --color-gray-300: 209 213 219;
+    --color-gray-400: 156 163 175;
+    --color-gray-500: 107 114 128;
+    --color-gray-600: 75 85 99;
+    --color-gray-700: 55 65 81;
+    --color-gray-800: 31 41 55;
+    --color-gray-900: 17 24 39;
+    
+    --color-background: 255 255 255;
+    --color-foreground: 17 24 39;
+  }
+  
+  .dark {
+    --color-background: 17 24 39;
+    --color-foreground: 255 255 255;
+    
+    --color-gray-50: 17 24 39;
+    --color-gray-100: 31 41 55;
+    --color-gray-200: 55 65 81;
+    --color-gray-300: 75 85 99;
+    --color-gray-400: 107 114 128;
+    --color-gray-500: 156 163 175;
+    --color-gray-600: 209 213 219;
+    --color-gray-700: 229 231 235;
+    --color-gray-800: 243 244 246;
+    --color-gray-900: 249 250 251;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans transition-colors duration-200;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark text-white focus:ring-primary;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary hover:bg-secondary-dark text-white focus:ring-secondary;
+  }
+  
+  .btn-accent {
+    @apply bg-accent hover:bg-accent-dark text-white focus:ring-accent;
+  }
+  
+  .btn-outline {
+    @apply border border-gray-300 bg-transparent hover:bg-gray-50 dark:hover:bg-gray-800 text-foreground focus:ring-gray-400;
+  }
+  
+  .input {
+    @apply block w-full rounded-md border-gray-300 dark:border-gray-700 bg-background text-foreground shadow-sm focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-all duration-200;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out;
+  }
+  
+  .animate-pulse-light {
+    animation: pulseLightOpacity 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes pulseLightOpacity {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+  }
+}
