@@ -3,45 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduPlatform - Learn Anything</title>
+    <title>LearnHub - Learn Without Limits</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">EduPlatform</div>
+            <div class="logo">LearnHub</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="dashboard.html">Dashboard</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="theme-switcher">
-                <button id="theme-toggle">Switch Theme</button>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle">🌙</button>
+                <a href="dashboard.html" class="dashboard-button">My Dashboard</a>
             </div>
         </nav>
     </header>
     <main>
         <section class="hero">
-            <h1>Learn Anything, Anytime</h1>
-            <p>Explore our curated courses to boost your skills.</p>
-            <a href="#courses" class="cta-button">Browse Courses</a>
+            <div class="hero-content">
+                <h1>Learn Without Limits</h1>
+                <p>Expand your skills with expert-led courses across tech, design, business, and more.</p>
+                <div class="hero-buttons">
+                    <a href="#courses" class="cta-button primary">Start Learning</a>
+                    <a href="#courses" class="cta-button secondary">Explore Courses</a>
+                </div>
+                <div class="hero-stats">
+                    <span>10K+ students already learning</span>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Placeholder for hero image -->
+                <div class="image-placeholder">Hero Image Placeholder</div>
+            </div>
         </section>
         <section id="courses" class="courses">
-            <h2>Featured Courses</h2>
-            <div id="course-list"></div>
-        </section>
-        <section class="newsletter">
-            <h2>Stay Updated</h2>
-            <form id="newsletter-form">
-                <input type="text" id="newsletter-name" placeholder="Your Name" required>
-                <input type="email" id="newsletter-email" placeholder="Your Email" required>
-                <button type="submit" class="cta-button">Subscribe</button>
-            </form>
+            <div class="courses-header">
+                <div>
+                    <h2>Featured Courses</h2>
+                    <p>Discover our most popular courses chosen by thousands of students</p>
+                </div>
+                <a href="#" class="view-all">View all courses →</a>
+            </div>
+            <div id="course-list" class="course-list"></div>
         </section>
     </main>
     <footer>
-        <p>© 2025 EduPlatform. All rights reserved.</p>
+        <p>© 2025 LearnHub. All rights reserved.</p>
     </footer>
     <script src="js/main.js"></script>
 </body>

@@ -3,43 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Details - EduPlatform</title>
+    <title>Course Details - LearnHub</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">EduPlatform</div>
+            <div class="logo">LearnHub</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="dashboard.html">Dashboard</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="theme-switcher">
-                <button id="theme-toggle">Switch Theme</button>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle">🌙</button>
+                <a href="dashboard.html" class="dashboard-button">My Dashboard</a>
             </div>
         </nav>
     </header>
     <main>
         <section class="course-details">
-            <h1 id="course-title"></h1>
-            <p id="course-description"></p>
-            <p><strong>Instructor:</strong> <span id="course-instructor"></span></p>
-            <p><strong>Price:</strong> <span id="course-price"></span></p>
-            <button id="enroll-button" class="cta-button">Enroll Now</button>
+            <a href="index.html#courses" class="back-link">← Back to Courses</a>
+            <div class="course-header">
+                <div class="course-info">
+                    <h1 id="course-title"></h1>
+                    <p id="course-description"></p>
+                    <div class="course-stats">
+                        <span class="stat rating">★ <span id="course-rating">4.7</span> (<span id="course-students">5678 students</span>)</span>
+                        <span class="stat duration">🕒 <span id="course-duration">32h 15m</span></span>
+                        <span class="stat lessons">📚 <span id="course-lessons">56 lessons</span></span>
+                        <span class="stat level">📊 <span id="course-level">Beginner</span></span>
+                    </div>
+                    <div class="instructor-info">
+                        <img src="https://via.placeholder.com/40" alt="Instructor" class="instructor-img">
+                        <p><strong>Instructor:</strong> <span id="course-instructor"></span></p>
+                    </div>
+                </div>
+                <div class="course-image">
+                    <!-- Placeholder for course image -->
+                    <div class="image-placeholder">Course Image Placeholder</div>
+                </div>
+            </div>
+            <div class="course-actions">
+                <button id="enroll-button" class="cta-button primary">Enroll Now</button>
+                <button class="cta-button secondary">Wishlist</button>
+                <button class="cta-button secondary">Share</button>
+            </div>
             <div class="progress-tracker">
                 <h3>Your Progress</h3>
                 <div class="progress-bar">
                     <div id="progress-fill" style="width: 0%"></div>
                 </div>
                 <p id="progress-text">0% Complete</p>
-                <button id="update-progress" class="cta-button">Update Progress</button>
+                <button id="update-progress" class="cta-button secondary">Update Progress</button>
+            </div>
+            <div class="course-curriculum">
+                <h2>Course Curriculum</h2>
+                <div id="course-curriculum-content">
+                    <div class="curriculum-section">
+                        <h3>1. Python Basics for Data Science</h3>
+                        <ul>
+                            <li>Python Fundamentals Review <span>18:30</span></li>
+                            <li>Working with NumPy <span>25:15</span></li>
+                            <li>Introduction to Pandas <span>30:45</span></li>
+                        </ul>
+                    </div>
+                    <div class="curriculum-section">
+                        <h3>2. Data Visualization</h3>
+                        <ul>
+                            <li>Matplotlib Essentials <span>22:10</span></li>
+                            <li>Creating Beautiful Visualizations with Seaborn <span>20:50</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <p>© 2025 EduPlatform. All rights reserved.</p>
+        <p>© 2025 LearnHub. All rights reserved.</p>
     </footer>
     <script src="js/course.js"></script>
 </body>
